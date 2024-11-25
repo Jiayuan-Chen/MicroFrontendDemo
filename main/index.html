@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微前端</title>
+</head>
+<body>
+  <ul class="mainapp-sidemenu">
+    <li onclick="push('/react')">React</li>
+    <li onclick="push('/vue')">Vue</li>
+  </ul>
+  <!-- 子应用 -->
+   <main id="subapp-container"></main>
+  <!-- 二级子应用 -->
+  <!-- <main id="yourContainer2"></main> -->
+</body>
+
+<script>
+  function push(subapp) {history.pushState(null, subapp, subapp)}
+</script>
+
+</html>
+
+<script type="text/javascript" src="index.js" charset="UTF-8"></script>
